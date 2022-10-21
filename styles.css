@@ -1,5 +1,21 @@
-li{
+li {
     display: inline;
     color: black;
-    
+    text-decoration: black;
+
 }
+
+nav {
+    border: solid black 10px;
+}
+
+a {
+    padding: 80px;
+    color: black;
+}
+
+form{
+    padding-top: 50px;
+    font-size: xx-large;
+}
+
