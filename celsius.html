@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,25 +8,32 @@
     <title>Celsius to Fahrenheit</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    
-    <div class="navbar">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="fahrenheit.html">Fahrenheit/Celsuis</a></li>
-                <li><a href="celsius.html">Celsuis/Fahrenheit</a></li>
-            </ul>
-        </nav>
+    <div id="celsius">
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="fahrenheit.html">Fahrenheit/Celsuis</a></li>
+                    <li><a href="celsius.html">Celsuis/Fahrenheit</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <form>
+            <p>Celsius</p>
+            <input type="number" 
+                    id="celsius" 
+                    oninput="celsiusConversion(value)"/>
+            <p>Fahrenheit</p>
+            <input type="number" 
+                    id="fahrenheit" 
+                    oninput="fahrenheitConversion(value)"/>
+            
+        </form>
     </div>
-
-    <form>
-        <label for="celInput">Input Celsius</label>
-            <input type="text">
-          
-            <input type="submit">
-    </form>
-
-
+    <script src="scripts.js"></script>
 </body>
+
 </html>

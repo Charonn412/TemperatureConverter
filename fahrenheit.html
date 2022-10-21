@@ -10,22 +10,27 @@
 </head>
 
 <body>
+    <div id="fahrenheit">
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="fahrenheit.html">Fahrenheit/Celsuis</a></li>
+                    <li><a href="celsius.html">Celsuis/Fahrenheit</a></li>
+                </ul>
+            </nav>
+        </div>
 
-    <div class="navbar">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="fahrenheit.html">Fahrenheit/Celsuis</a></li>
-                <li><a href="celsius.html">Celsuis/Fahrenheit</a></li>
-            </ul>
-        </nav>
-    </div>
-
-    <form>
-        <label for="fahInput">Input Fahrenheit</label>
-            <input type="text">
-        
-            <input type="submit">
-    </form>
+        <form>
+            <p>Fahrenheit</p>
+            <input type="number" 
+                    id="fahrenheit" 
+                    oninput="fahrenheitConversion(value)"/>
+            <p>Celsius</p>
+            <input type="number" 
+                    id="celsius" 
+                    oninput="celsiusConversion(value)"/>
+        </form>
+        <script src="scripts.js"></script>
 
 </html>
